@@ -1,7 +1,7 @@
-function newPizza() {
-  this.totalCost = 0;
-  this.size = "";
-  this.toppings = [];
+function newPizza(totalCost, size, toppings) {
+  this.totalCost = totalCost;
+  this.size = size;
+  this.toppings = [toppings];
 }
 
 // newPizza.prototype.addPepperoni = function(pizza){
@@ -26,31 +26,31 @@ newPizza.prototype.calcSizePrice = function(pizza){
   } else if (this.size == ("medium")){
     this.totalCost += 3;
   } else if   (this.size == ("large")){
-  this.totalCost += 4;
+    this.totalCost += 4;
   }
   return this.totalCost
 }
 
-newPizza.prototype.calcToppingPrice = function(input){
-    if (input.includes('pepperoni')) {
+newPizza.prototype.calcToppingPrice = function(){
+  if (this.toppings.includes('pepperoni')) {
     (this.totalcost) +=.6
-  } if (input.includes('olives')) {
-  (this.totalcost) +=.4
-} if (input.includes('moCheese')) {
-(this.totalcost) +=.2
-}
+  } if (this.toppings.includes('olives')) {
+    (this.totalcost) +=.4
+  } if (this.toppings.includes('moCheese')) {
+    (this.totalcost) +=.2
+  }
 }
 
 function submitSize(){
 
 }
 
-function submitToppings(input){
-  var pizzoArray = [input]
-  console.log(pizzoArray)
-  var pizzo = new newPizza;  
-  var topPrice = pizzo.calcToppingPrice;
-  }
+// function submitToppings(input){
+//   pizzo.toppings.push(input);
+//   console.log(pizzo.toppings)
+//   pizzo.toppings.calcToppingPrice();
+//   console.log(pizzo)
+//   }
 
 
 
@@ -58,13 +58,12 @@ $(document).ready(function() {
   $("form.pizza-order").submit(function(event) {
     event.preventDefault();
     var size = $("#size").val();
-
-
     var toppingArray = []
     $("input:checkbox[name=topping]:checked").map(function(toppings){
       toppingArray[toppings] = $(this).val();
     });
-      var toppingPrice = submitToppings(toppingArray);
-      alert(toppingPrice)
+      // var toppingPrice = submitToppings(toppingArray);
+      var pizzo = new newPizza(0, size, toppingArray )
+      console.log(pizzo)
  });
 });
