@@ -3,20 +3,18 @@ function newPizza() {
   this.size = "";
   this.toppings = [];
 }
-
-
-
-newPizza.prototype.selectSmall = function(pizza){
-  this.size = ("small")
-}
-
-newPizza.prototype.selectMedium = function(pizza){
-  this.size = ("medium")
-}
-
-newPizza.prototype.selectLarge = function(pizza){
-  this.size = ("large")
-}
+//
+// newPizza.prototype.selectSmall = function(pizza){
+//   this.size = ("small")
+// }
+//
+// newPizza.prototype.selectMedium = function(pizza){
+//   this.size = ("medium")
+// }
+//
+// newPizza.prototype.selectLarge = function(pizza){
+//   this.size = ("large")
+// }
 
 
 newPizza.prototype.addPepperoni = function(pizza){
@@ -49,14 +47,17 @@ newPizza.prototype.calcToppingPrice = function(pizza){
   var toppingPrice = toppingTotal * .2;
   this.totalCost += toppingPrice;
 }
-
-
-
+function newPizza(){
+var pizzo = new newPizza
+}
 $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
+    var size = $("#size").val();
 
-
-
+    $("input:checkbox[name=topping]:checked").each(function(){
+      var selectedToppings = $(this).val();
+      selectedToppings(selectedToppings);
+    });
  });
 });
