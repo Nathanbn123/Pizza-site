@@ -36,13 +36,17 @@ $(document).ready(function() {
       toppingArray[toppings] = $(this).val();
     });
       var pizzo = new newPizza(0, size, toppingArray )
+      var toppingNo = toppingArray.length
       console.log(pizzo)
       pizzo.calcSizePrice();
       console.log(pizzo)
       pizzo.calcToppingPrice();
       console.log(pizzo)
 
-      $('#pizza-size').text(pizzo.size);
+      $('#pizza-size').text(pizzo.size + " ");
+      $('#topping-no').text(toppingNo);
+      $('#pizza-cost').text(pizzo.totalCost);
+
 
  });
 });
