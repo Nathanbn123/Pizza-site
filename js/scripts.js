@@ -21,7 +21,7 @@ newPizza.prototype.selectLarge = function(pizza){
 
 newPizza.prototype.addPepperoni = function(pizza){
   (this.toppings).push("pepperoni");
-  (this.totalCost) += .6;
+  (this.totalCost) += .3;
 }
 
 newPizza.prototype.addOlives = function(pizza){
@@ -31,7 +31,7 @@ newPizza.prototype.addOlives = function(pizza){
 
 newPizza.prototype.moreCheese = function(pizza){
   (this.toppings).push("extraCheese");
-  (this.totalCost) += .3;
+  (this.totalCost) += .1;
 }
 
 newPizza.prototype.calcSizePrice = function(pizza){
@@ -49,3 +49,14 @@ newPizza.prototype.calcToppingPrice = function(pizza){
   var toppingPrice = toppingTotal * .2;
   this.totalCost += toppingPrice;
 }
+
+
+
+$(document).ready(function() {
+  $("form#new-contact").submit(function(event) {
+    event.preventDefault();
+
+
+
+ });
+});
