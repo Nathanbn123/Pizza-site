@@ -1,7 +1,7 @@
 function newPizza(totalCost, size, toppings) {
   this.totalCost = totalCost;
   this.size = size;
-  this.toppings = [toppings];
+  this.toppings = toppings;
 }
 
 // newPizza.prototype.addPepperoni = function(pizza){
@@ -20,7 +20,7 @@ function newPizza(totalCost, size, toppings) {
       // }
 
 
-newPizza.prototype.calcSizePrice = function(pizza){
+newPizza.prototype.calcSizePrice = function(){
   if (this.size == ("small")) {
     (this.totalCost) += 2;
   } else if (this.size == ("medium")){
@@ -33,17 +33,16 @@ newPizza.prototype.calcSizePrice = function(pizza){
 
 newPizza.prototype.calcToppingPrice = function(){
   if (this.toppings.includes('pepperoni')) {
-    (this.totalcost) +=.6
+    (this.totalCost) +=.6
   } if (this.toppings.includes('olives')) {
-    (this.totalcost) +=.4
+    (this.totalCost) +=.4
   } if (this.toppings.includes('moCheese')) {
-    (this.totalcost) +=.2
+    (this.totalCost) +=.2
   }
+  return this.totalCost
 }
 
-function submitSize(){
 
-}
 
 // function submitToppings(input){
 //   pizzo.toppings.push(input);
@@ -62,8 +61,12 @@ $(document).ready(function() {
     $("input:checkbox[name=topping]:checked").map(function(toppings){
       toppingArray[toppings] = $(this).val();
     });
-      // var toppingPrice = submitToppings(toppingArray);
+
       var pizzo = new newPizza(0, size, toppingArray )
+      console.log(pizzo)
+      pizzo.calcSizePrice();
+      console.log(pizzo)
+      pizzo.calcToppingPrice();
       console.log(pizzo)
  });
 });
