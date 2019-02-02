@@ -5,6 +5,11 @@ body {
 p {
   font-size: 19px;
 }
+
+#why {
+  margin-bottom: -50px;
+}
+
 .greetings {
   background-color: #009246;
   padding-top: -70px;
@@ -24,6 +29,8 @@ p {
 .literal-pizza {
 display: inline-block;
 float: left;
+margin-bottom: 45px;
+margin-left: 450px;
 
 }
 
