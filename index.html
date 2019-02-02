@@ -8,30 +8,39 @@
     <title>Pizza tiiimmme</title>
   </head>
   <body>
-    <h1 class="jumbotron">Welcome to Pizzo's!</h1>
+    <section class="greetings">
 
-    <form class="pizza-order" action="index.html" method="post">
-    <div class="container" id="size-select">
-      <select class="form-control" id="size">
-         <option value="small">Small</option>
-         <option value="medium">Medium</option>
-         <option value="large">Large</option>
-       </select>
-    </div>
+      <h1 class="jumbotron">Welcome to Pizzo's!</h1>
 
-    <div class="container" id="topping-select">
-    <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
-      <input type="checkbox" name="topping" value="olives"> Olives<br>
-      <input type="checkbox" name="topping" value="moCheese" checked> Extra Cheese<br>
-    </div>
+
+      <img class="pizzo"src="img/pizzo.jpg" alt="logo for pizzo's">
+    </section>
+    <section>
+
+        <h3 class="sub-head">Waddaya wana eat?</h3>
+        <div class="container" id="size-select">
+        <form class="pizza-order" action="index.html" method="post">
+          <select class="form-control" id="size">
+             <option value="small">Small</option>
+             <option value="medium">Medium</option>
+             <option value="large">Large</option>
+           </select>
+        <div class="container" id="topping-select">
+          <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="topping" value="olives"> Olives<br>
+          <input type="checkbox" name="topping" value="moCheese" checked> Extra Cheese<br>
+        </div>
+      </div>
 
     <button type="submit" name="button">Submit</button>
 
     </form>
+  </section>
+    <section class="reciept">
 
 
     <div class="card" style="width: 18rem;" id="output">
-      <img class="card-img-top" src="#" alt="Card image cap">
+      <img class="card-img-top" src="#" alt="image of Baizza">
       <div class="card-body">
         <h5 class="card-title">Thank you for your order!</h5>
         <p class="card-text">Your <span id="pizza-size"></span>, <span id="topping-no"></span> topping pizza is on the way!</p>
@@ -41,9 +50,6 @@
     </div>
 
 
-
-
-
-
+  </section>
   </body>
 </html>

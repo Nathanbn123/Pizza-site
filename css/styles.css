@@ -1,1 +1,32 @@
+body {
+  text-align: center;
+}
 
+.greetings {
+  background-color: #009246;
+  padding-top: -70px;
+}
+.pizzo {
+  width: 45%;
+  height: auto;
+
+  margin-right: 3%;
+}
+
+
+.pizza-order {
+  float: right;
+}
+
+.reciept {
+  background-color: #ce2b37;
+  height: 450px;
+}
+
+
+
+
+
+#output {
+  margin: 0 auto;
+}
