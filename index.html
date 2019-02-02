@@ -9,46 +9,40 @@
   </head>
   <body>
     <section class="greetings">
-
       <h1 class="jumbotron" id="why">Welcome to Pizzo's!</h1>
-
-
       <img class="pizzo"src="img/pizzo.jpg" alt="logo for pizzo's">
     </section>
+
     <section class="waddaya">
-
-        <h3 class="jumbotron" id="sub-head">Waddaya wana eat?</h3>
-        <img class="literal-pizza" src="img/pizza.jpg" alt="image of yum">
-        <div class="container" id="size-select">
-        <form class="pizza-order" action="index.html" method="post">
-          <select class="form-control" id="size">
-             <option value="small">Small</option>
-             <option value="medium">Medium</option>
-             <option value="large">Large</option>
-          </select>
-          <div class="container" id="topping-select">
-            <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
-            <input type="checkbox" name="topping" value="olives"> Olives<br>
-            <input type="checkbox" name="topping" value="moCheese" checked> Extra Cheese<br>
-          </div>
-          <button type="submit" name="button">Submit</button>
-        </form>
-      </div>
-    </section>
-    <section class="reciept">
-
-
-    <div class="card" style="width: 18rem;" id="output">
-      <h4><strong>Reciept</strong></h4>
-      <div class="card-body">
-        <h5 class="card-title">Thank you for your order!</h5>
-        <p class="card-text">Your <span id="pizza-size"></span>, <span id="topping-no"></span> topping pizza is on the way!</p>
-        <br>
-        <p>it will cost $<span id="pizza-cost"></span></p>
-      </div>
+      <h3 class="jumbotron" id="sub-head">Waddaya wana eat?</h3>
+      <img class="literal-pizza" src="img/pizza.jpg" alt="image of yum">
+      <div class="container" id="size-select">
+      <form class="pizza-order" action="index.html" method="post">
+        <select class="form-control" id="size">
+           <option value="small">Small</option>
+           <option value="medium">Medium</option>
+           <option value="large">Large</option>
+        </select>
+        <div class="container" id="topping-select">
+          <input type="checkbox" name="topping" value="pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="topping" value="olives"> Olives<br>
+          <input type="checkbox" name="topping" value="moCheese" checked> Extra Cheese<br>
+        </div>
+        <button class="btn btn-info" type="submit" name="button">Submit</button>
+      </form>
     </div>
+    </section>
 
-
+    <section class="reciept">
+      <div class="card" style="width: 18rem;" id="output">
+        <h4><strong>Reciept</strong></h4>
+        <div class="card-body">
+          <h5 class="card-title">Thank you for your order!</h5>
+          <p class="card-text">Your <span id="pizza-size"></span>, <span id="topping-no"></span> topping pizza is on the way!</p>
+          <br>
+          <p>it will cost $<span id="pizza-cost"></span></p>
+        </div>
+      </div>
   </section>
   </body>
 </html>

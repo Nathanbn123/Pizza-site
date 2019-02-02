@@ -20,24 +20,32 @@ p {
   margin-right: 3%;
 }
 
-
 .waddaya {
-  height: 750px;
+  height: 850px;
   margin: 0 auto;
 }
 
-.literal-pizza {
-display: inline-block;
-float: left;
-margin-bottom: 45px;
-margin-left: 450px;
+#sub-head {
+  font-size: 35px;
+}
 
+.literal-pizza {
+  display: inline-block;
+  float: left;
+  margin-bottom: 45px;
+  margin-left: 450px;
 }
 
 .pizza-order {
   display: inline-block;
   float: right;
+  margin-top: 45px;
 }
+
+#topping-select {
+  padding: 75px;
+}
+
 
 .reciept {
   background-color: #ce2b37;
@@ -51,4 +59,5 @@ margin-left: 450px;
 #output {
   display: none;
   margin: 0 auto;
+  padding-top: 35px;
 }
