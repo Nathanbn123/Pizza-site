@@ -2,6 +2,9 @@ body {
   text-align: center;
 }
 
+p {
+  font-size: 19px;
+}
 .greetings {
   background-color: #009246;
   padding-top: -70px;
@@ -15,9 +18,17 @@ body {
 
 .waddaya {
   height: 750px;
+  margin: 0 auto;
+}
+
+.literal-pizza {
+display: inline-block;
+float: left;
+
 }
 
 .pizza-order {
+  display: inline-block;
   float: right;
 }
 
