@@ -35,18 +35,16 @@ $(document).ready(function() {
     $("input:checkbox[name=topping]:checked").map(function(toppings){
       toppingArray[toppings] = $(this).val();
     });
-      var pizzo = new newPizza(0, size, toppingArray )
-      var toppingNo = toppingArray.length
-      console.log(pizzo)
-      pizzo.calcSizePrice();
-      console.log(pizzo)
-      pizzo.calcToppingPrice();
-      console.log(pizzo)
-
-      $('#pizza-size').text(pizzo.size + " ");
-      $('#topping-no').text(toppingNo);
-      $('#pizza-cost').text(pizzo.totalCost);
-
-
+    var pizzo = new newPizza(0, size, toppingArray )
+    var toppingNo = toppingArray.length
+    console.log(pizzo)
+    pizzo.calcSizePrice();
+    console.log(pizzo)
+    pizzo.calcToppingPrice();
+    console.log(pizzo)
+    $('#output').show();
+    $('#pizza-size').text(pizzo.size + " ");
+    $('#topping-no').text(toppingNo);
+    $('#pizza-cost').text(pizzo.totalCost);
  });
 });

@@ -9,10 +9,13 @@ body {
 .pizzo {
   width: 45%;
   height: auto;
-
   margin-right: 3%;
 }
 
+
+.waddaya {
+  height: 750px;
+}
 
 .pizza-order {
   float: right;
@@ -28,5 +31,6 @@ body {
 
 
 #output {
+  display: none;
   margin: 0 auto;
 }
