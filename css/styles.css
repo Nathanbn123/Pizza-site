@@ -46,18 +46,14 @@ p {
   padding: 75px;
 }
 
-
 .reciept {
   background-color: #ce2b37;
   height: 450px;
 }
 
-
-
-
-
 #output {
   display: none;
+  margin-top: 35px;
   margin: 0 auto;
-  padding-top: 35px;
+  position: static;
 }
