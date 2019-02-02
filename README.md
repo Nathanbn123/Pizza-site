@@ -1,15 +1,12 @@
 # _Pizza site_
 
-#### _A website where you can order some pizza!, 1/25/19_
+#### _A website where you can order some pizza!, 2/1/19_
 
 #### By _**Nathan Nielson**_
 
 ## Description
 
 _This application provides the user with the oppurtunity to order some delicious pizza!_ 
-
-
-## Specs
 
 ## Setup/Installation Requirements
 
