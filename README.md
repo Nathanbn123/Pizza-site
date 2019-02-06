@@ -1,6 +1,6 @@
 # _Pizza site_
 
-#### _A website where you can order some pizza!, 1/25/19_
+#### _A website where you can order some pizza!, 2/1/19_
 
 #### By _**Nathan Nielson**_
 
@@ -8,26 +8,16 @@
 
 _This application provides the user with the oppurtunity to order some delicious pizza!_ 
 
-
 ## Specs
-*_Spec: The program returns a range of numbers from 0 to the users inputted number
-        Input: "4"
-        Output: "0, 1, 2, 3, 4"_
-*_Spec: Exception 1: The program will replace any number that contains a one(1) with "Beep!"
-	    Input:"21"
-	    Output: "Beep!"_
-*_Spec: Exception 2: The program will replace any number that contains a two(2) with "Boop!"
-        Input: "32"
-	    Output: "Boop!"_
-*_Spec: Exception 3: The program will replace any number that contains a three(3) with "I'm sorry, Dave. I can't do that."
-	    Input: "43"
-	    Output: "I'm sorry, Dave. I can't do that."_
-    
-_These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third._
 
-*_Spec: A user should be able to enter a new number and see new results over and over again._
+Specification | Input | Output
+------------- | ----- | ------
+The program will take radio inputs from the user and display the number of corresponding toppings with a total value after submission. | Olives, Extra cheese | Thank you for your order! Your small , 2 topping pizza is on the way! It will cost $3.6. 
+The program will take selection input from the user and display the corresponding size with a total value.| Medium | Thank you for your order! Your medium , 2 topping pizza is on the way! It will cost $3.6
 
 
+
+ 
 
 ## Setup/Installation Requirements
 
