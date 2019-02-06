@@ -41,10 +41,11 @@ $(document).ready(function() {
     pizzo.calcSizePrice();
     console.log(pizzo)
     pizzo.calcToppingPrice();
+    var finalCost = pizzo.totalCost.toFixed(2);
     console.log(pizzo)
     $('#output').show();
     $('#pizza-size').text(pizzo.size + " ");
     $('#topping-no').text(toppingNo);
-    $('#pizza-cost').text(pizzo.totalCost);
+    $('#pizza-cost').text(finalCost);
  });
 });

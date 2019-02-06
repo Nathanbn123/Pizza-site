@@ -12,8 +12,8 @@ _This application provides the user with the oppurtunity to order some delicious
 
 Specification | Input | Output
 ------------- | ----- | ------
-The program will take radio inputs from the user and display the number of corresponding toppings with a total value after submission. | Olives, Extra cheese | Thank you for your order! Your small , 2 topping pizza is on the way! It will cost $3.6. 
-The program will take selection input from the user and display the corresponding size with a total value.| Medium | Thank you for your order! Your medium , 2 topping pizza is on the way! It will cost $3.6
+The program will take radio inputs from the user and display the number of corresponding toppings with a total value after submission. | Olives, Extra cheese | Thank you for your order! Your small , 2 topping pizza is on the way! It will cost $3.60 
+The program will take selection input from the user and display the corresponding size with a total value.| Medium | Thank you for your order! Your medium , 2 topping pizza is on the way! It will cost $4.60
 
 
 
